@@ -1,0 +1,89 @@
+<html>
+<head>
+  <title>Administrasi Universitas Jendral Achmad Yani Yogyakarta</title>
+  <link rel="stylesheet" href="/static/menutest.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='mahasiswa.css') }}">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="static/images/icons/unjani.ico" />
+
+</head>
+<body>
+  <div class="wrapper">
+    <div id="side" class="sidebar">
+      <div class="bg_shadow"></div>
+      <div class="sidebar__inner">
+        <div class="close">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="profile_info">
+          <div class="profile_img">
+            <img src="/static/images/icons/unjani.png" alt="profile_img">
+          </div>
+          <div class="profile_data">
+            <p class="name">UNJANI</p>
+            <p class="role">{{ rule }}</p>
+            <div class="btn"><a href="{{ url_for('logout') }}">Logout</a></div>
+          </div>
+        </div>
+        <ul class="siderbar_menu">
+          <li><a href="{{ url_for('index') }}">
+              <div class="icon"><i class="fas fa-home"></i></div>
+              <div class="title">Home</div>
+            </a></li>
+          <li><a href="{{ url_for('User') }}">
+              <div class="icon"><i class="fas fa-newspaper"></i></div>
+              <div class="title">Mahasiswa</div>
+            </a></li>
+          <li><a href="{{ url_for('DetailUser') }}">
+              <div class="icon"><i class="fas fa-money-bill-alt"></i></div>
+              <div class="title">Pembayaran</div>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main_container">
+      <div class="top_navbar">
+        <div class="hamburger">
+          <div class="hamburger__inner">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <ul class="menu">
+          <li>Selamat Datang {{ name }}</li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <div class="item">
+          <h2>Profil Universitas Jendral Achmad Yani</h2>
+          <img src="../static/Cewe.JPG" width="100%" height="688px">
+          <p>Universitas Jenderal Achmad Yani Yogyakarta merupakan Lembaga Pendidikan di bawah naungan Yayasan Kartika
+            Eka Paksi (YKEP) hasil penggabungan Sekolah Tinggi Imu Kesehatan (Stikes) dan Sekolah Tinggi Manajemen
+            Informatika dan Komputer (Stmik) Jenderal Achmad Yani Yogyakarta berdasarkan Surat Keputusan Kementerian
+            Riset dan Teknologi Pendidikan Tinggi Nomor 166/KPP/I/2018 tanggal 2 Februari 2018 dan diresmikan oleh
+            Kepala Staf TNI Angkatan Darat (Kasad) Jenderal TNI Mulyono pada 26 Maret 2018. Dengan berprinsip pada
+            “Kampus Kejuangan” dan seiring dengan visi YKEP di bidang pendidikan yaitu “Tersedianya Lembaga Pendidikan
+            Yang Mandiri, Terpercaya, Memiliki Keunggulan Kompetitif dan Menerapkan Tata Kelola Yang Baik Serta Mewarisi
+            Jiwa/Semangat Kejuangan Jenderal Achmad Yani”, Universitas Jenderal Achmad Yani Yogyakarta memiliki dua
+            kampus yaitu. Kampus 1 yang berlokasi di Jl. Siliwangi, Ringroad Barat, Banyuraden, sedangkan Kampus 2
+            berlokasi di Jl. Brawijaya, Ringroad Barat, Ambarketawang dimana keduanya berada di Kecamatan Gamping,
+            Kabupaten Sleman, Daerah Istimewa Yogyakarta yang dilengkapi dengan ruang kuliah yang representatif,
+            laboratorium berstandar internasional, dan didukung berbagai fasilitas penunjang pendidikan diantaranya:
+            laboratorium komputer, laboratorium CBT, asrama mahasiswi, masjid, area olah raga, hotspot area, dan
+            berbagai kerjasama baik dalam dan luar Negeri untuk mendukung pengembangan Akademik, penelitian dan praktik
+            mahasiswa. Program Studi di Universitas Jenderal Achmad Yani Yogyakarta telah terakreditasi Lembaga
+            Akreditasi Mandiri Pendidikan Tinggi Kesehatan Indonesia (LAM-PTKes) dan Badan Akreditasi Nasional Perguruan
+            Tinggi (BAN-PT), dimana untuk Insitusi telah terakreditasi dengan peringkat B berdasarkan SK BAN-PT Nomor:
+            394/SK/BAN-PT/Ak-PNB/PT/IX/2019</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="/static/menutest.js"></script>
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>

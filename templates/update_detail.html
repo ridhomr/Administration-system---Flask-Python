@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Data</title>
+</head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+	<h2 align="center">Silahkan Ubah Data</h2>
+<div>
+	<form action="{{ url_for('update_processDetail') }}" method="post">
+		Id_Biaya: <br />
+		<input type="text" name="Id_Biaya"
+			value="{{ data[1] }}"
+			size="50" maxlength="50" /><br />
+		Semester: <br />
+		<input type="text" name="Semester"
+			value="{{ data[2] }}"
+			size="50" maxlength="50" /><br />
+		Sumbangan: <br />
+		<input type="text" name="Sumbangan"
+			value="{{ data[3] }}"
+			size="50" maxlength="50" /><br />
+		Pra_Kuliah: <br />
+		<input type="text" name="Pra_Kuliah"
+			value="{{ data[4] }}"
+			size="50" maxlength="50" /><br />
+		her_registrasi: <br />
+		<input type="text" name="her_registrasi"
+			value="{{ data[5] }}"
+			size="50" maxlength="50" /><br />
+		SPP_Tetap: <br />
+		<input type="text" name="SPP_Tetap"
+			value="{{ data[6] }}"
+			size="50" maxlength="50" /><br />
+		SPP_Variable: <br />
+		<input type="text" name="SPP_Variable"
+			value="{{ data[7] }}"
+			size="50" maxlength="50" /><br />
+		UTS: <br />
+		<input type="text" name="UTS"
+			value="{{ data[8] }}"
+			size="50" maxlength="50" /><br />
+		UAS: <br />
+		<input type="text" name="UAS"
+			value="{{ data[9] }}"
+			size="50" maxlength="50" /><br />
+		total_biaya: <br />
+		<input type="text" name="total_biaya"
+			value="{{ data[10] }}"
+			size="50" maxlength="50" /><br />
+		<input type="hidden" name="Id_Detail"
+			value="{{ data[0] }}" />
+		<p><input type="submit" name="Simpan"></p><br />
+	</form>
+</div>
+	</table>
+</body>
+</html>

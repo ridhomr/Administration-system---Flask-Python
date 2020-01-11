@@ -1,0 +1,43 @@
+<!--RIDHO MARHABAN-->
+<html>
+<head>
+	<title>administrasi_Keuangan</title>
+	<link rel="stylesheet" href="{{  url_for('static', filename='insert_mahasiswa.css')}}" type="text/css">
+</head>
+<body>
+	<div class="container">
+	<div class="main">
+	<h2>DATA MAHASISWA</h2>
+	<form action="{{ url_for('update_process') }}"
+		method="post">
+		<label>id_account: </label>
+		<input type="int" name="id_account"  class="form_insert" placeholder="id" value="{{ data[0] }}" size="50" maxlength="50" /><br>
+		<label>nim: </label>
+		<input type="int" name="nim"  class="form_insert" placeholder="nim" value="{{ data[1] }}" size="50" maxlength="50" /><br>
+		<label>nama: </label>
+		<input type="text" name="nama" class="form_insert" placeholder="nama" value="{{ data[2] }}" size="50" maxlength="50" /><br>
+		<label>alamat: </label>
+		<input type="text" name="alamat" class="form_insert" placeholder="alamat" value="{{ data[3] }}" size="50" maxlength="50" /><br>
+		<label>tempat_lahir: </label>
+		<input type="text" name="tempat_lahir" class="form_insert" placeholder="tempat_lahir" value="{{ data[4] }}" size="50" maxlength="50" /><br>
+		<label>tgl_lahir: </label>
+		<input type="text" name="tgl_lahir" class="form_insert" placeholder="tgl_lahir" value="{{ data[5] }}" size="50" maxlength="50" /><br>
+		<label>jenis_kelamin: </label>
+		<input type="text" name="jenis_kelamin" class="form_insert" placeholder="jenis_kelamin" value="{{ data[6] }}" size="50" maxlength="50" /><br>
+		<label>agama: </label>
+		<input type="text" name="agama" class="form_insert" placeholder="agama" value="{{ data[7] }}" size="50" maxlength="50" /><br>
+		<label>prodi: </label>
+		<input type="text" name="prodi" class="form_insert" placeholder="prodi" value="{{ data[8] }}" size="50" maxlength="50" /><br>
+		<label>fakultas: </label>
+		<input type="text" name="fakultas" class="form_insert" placeholder="fakultas" value="{{ data[9] }}" size="50" maxlength="50" /><br>
+		<label>semester: </label>
+		<input type="int" name="semester"  class="form_insert" placeholder="semester" value="{{ data[10] }}" size="50" maxlength="50" /><br>
+		<label>angkatan: </label>
+		<input type="int" name="angkatan" class="form_insert" placeholder="angkatan" value="{{ data[11] }}" size="50" maxlength="50" /><br>
+		<input type="hidden" name="no" gg value="{{ data[0] }}" />
+		<p><input type="submit" value="Simpan"></p>
+	</form>
+</div>
+</div>
+</body>
+</html>

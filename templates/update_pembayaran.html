@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>administrasi_Keuangan</title>
+	<link rel="stylesheet"
+		href="{{ url_for('static',filename='tiwi.css')}}"
+		type="text/css">
+</head>
+<body>
+	<h2>Pembayaran</h2>
+	<form action="{{ url_for('update_process_pay') }}"
+		method="post">
+		id_pembayaran: <br>
+		<input type="int" name="id_pembayaran"
+			value="{{ data[0] }}"
+			size="50" maxlength="50" /><br>
+		tanggal: <br>
+		<input type="text" name="tanggal"
+			value="{{ data[1] }}"
+			size="50" maxlength="50" /><br>
+		nim: <br>
+		<input type="int" name="nim"
+			value="{{ data[2] }}"
+			size="50" maxlength="50" /><br>
+		nama: <br>
+		<input type="text" name="nama"
+			value="{{ data[3] }}"
+			size="50" maxlength="50" /><br>
+		prodi: <br>
+		<input type="text" name="prodi"
+			value="{{ data[4] }}"
+			size="50" maxlength="50" /><br>
+		semester: <br>
+		<input type="int" name="semester"
+			value="{{ data[5] }}"
+			size="50" maxlength="50" /><br>
+		id_biaya: <br>
+		<input type="int" name="id_biaya"
+			value="{{ data[6] }}"
+			size="50" maxlength="50" /><br>
+		jml_pembayaran: <br>
+		<input type="int" name="jml_pembayaran"
+			value="{{ data[7] }}"
+			size="50" maxlength="50" /><br>
+		jenis_pembayaran: <br>
+		<input type="text" name="jenis_pembayaran"
+			value="{{ data[8] }}"
+			size="50" maxlength="50" /><br>
+		<input type="hidden" name="no"
+			value="{{ data[0] }}" />
+		<p><input type="submit" value="Simpan"></p>
+	</form>
+</body>
+</html>

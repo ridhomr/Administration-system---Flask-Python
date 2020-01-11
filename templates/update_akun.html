@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>administrasi_keuangan</title>
+	<link rel="stylesheet" href="{{  url_for('static', filename='style1.css')}}" type="text/css">
+</head>
+<body>
+	<h2>DATA MAHASISWA</h2>
+	<form action="{{ url_for('update_process_acc') }}"
+		method="post">
+		id: <br>
+		<input type="int" name="id_account" value="{{ data[0] }}" /> <br>
+		name: <br>
+		<input type="int" name="name" value="{{ data[1] }}" size="50" maxlength="50" /><br>
+		username: <br>
+		<input type="int" name="username" value="{{ data[2] }}" size="50" maxlength="50" /><br>
+		password: <br>
+		<input type="text" name="password" value="{{ data[3] }}" size="50" maxlength="50" /><br>
+		rule: <br>
+		<input type="text" name="rule" value="{{ data[4] }}" size="50" maxlength="50" /><br>
+		<input type="hidden" name="no" gg value="{{ data[0] }}" />
+		<p><input type="submit" value="Simpan"></p>
+	</form>
+</body>
+</html>
