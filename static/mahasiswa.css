@@ -1,0 +1,137 @@
+* {
+    font-family: sans-serif; /* Change your font family */
+  }
+  
+  .justify{
+    text-align: justify;
+  }
+  
+  .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color: #15532C;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #15532C;
+  }
+  
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #15532C;
+  }
+
+  /* ==========BUTTON=============================== */
+
+  .btn-a{    
+    color: white;
+    text-decoration: none;
+
+  }
+  
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 16px;
+  }
+    
+  .btn-lg {
+    font-size: 12px;
+    line-height: 1.33;
+    border-radius: 6px;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #15532C;
+    border-color: #15532C;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active,
+  .btn-primary.active,
+  .open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: rgb(5, 93, 37);
+    border-color: #15532C;
+  }
+  
+  /***********************
+    RAISED BUTTONS
+  ************************/
+  .btn-primary.raised {
+      box-shadow: 0 3px 0 0 green;
+  }
+  .btn-primary.raised:active, .btn-primary.raised.active {
+      background: #15532C;
+      box-shadow: none;
+      margin-bottom: -3px;
+      margin-top: 3px;
+  }
+  
+  /***********************
+    CUSTON BTN VALUES
+  ************************/
+  
+  .btn {
+      padding: 0px 30px;
+      border: 0 none;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+  }
+  .btn:focus, .btn:active:focus, .btn.active:focus {
+      outline: 0 none;
+  }
+  
+  .btn-primary {
+      background: #15532C;
+      color: #ffffff;
+  }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+      background: rgb(5, 93, 37);
+  }
+  .btn-primary:active, .btn-primary.active {
+      background: #15532C;
+      box-shadow: none;
+  }

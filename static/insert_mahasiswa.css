@@ -1,0 +1,94 @@
+body{
+  text-align: center;
+  padding: 30px;
+  padding-top: 1px;
+}
+
+.container {
+  width: -80%;
+  margin: 0 auto;
+  padding: 5px -40px;
+}
+
+.form_insert{
+  font-family: 'Open Sans Condensed', arial, sans;FFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.22);
+}
+
+div.main{
+ width: 300px;
+ padding: 10px 450px 5px;
+ margin: 130px 70px;
+ border: 2px solid gray;
+ font-family: raleway;
+ float:center;
+ margin-top:15px;
+}
+
+h2{
+ background-color: #53bd84;
+ padding: 30px 22px 30px;
+ margin: -10px -450px;
+ text-align:center;
+ text-shadow: 2px -2px 15px #56FF67;
+ color: #fff;
+ background-color: #15532C;
+ font-size: 25px;
+ letter-spacing: 14px;
+}
+
+input::placeholder {
+  color: #15532C;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: Times New Roman;
+}
+
+input[type=text], select {
+  width: 1150px;
+  padding: 11px 15px;
+  margin: 15px -480px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+input[type=int], select {
+  width: 1150px;
+  padding: 11px 15px;
+  margin: 15px -480;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 1150px; 
+  color: #fff;
+  padding: 11px 10px;
+  padding-top: 10px;
+  margin: -10px -480;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 10px;
+  font-family: Times New Roman;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #15532C;
+  border: 2px solid #15532C;
+}
+
+input[type=submit]:hover {
+  background-color: #228B27;
+  border: 2px solid #228B27;
+  color: #fff
+}
+
+label{
+  font-size: 0px;
+  font-weight: bold;
+  margin: 120px;
+}
